@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --bg-ral-5: #ffd60a;
+  --deep-blue: #17093e;
+  --headings-font: "Agdasima", sans-serif;
+  --dark: #050069;
+  --border1: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Define color variables for easy management */
+$primary-color: #f0a500;
+$secondary-color: #02004c;
+$light-bg-color: #040d32;
+$text-color-light: #fff;
+$text-color-dark: #ddd;
+$accordion-bg: rgba(25, 12, 109, 0.6);
+$bg-gradient-start: #070086;
+$bg-gradient-mid: #050069;
+$bg-gradient-end: #02004b;
+$border1: 1px solid rgba(255, 255, 255, 0.15);
+
+$animation-1: #e62e3d;
+
+$success: #647e41;
+$primary: #070086;
+$secondary: #673ab7;
+
+#root,
+html {
+  height: 100%;
+}
+#root {
+  position: relative;
+}
+/* General page background */
+body {
+  background-color: $secondary-color;
+  color: $text-color-light;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  padding-top: 80px;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: var(--headings-font);
+}
+h4 {
+  font-weight: 400;
+}
+h1 span {
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+
+/* Navbar styling */
+.navbar-brand {
+  color: $text-color-light;
+  font-family: var(--headings-font);
+  font-weight: 700;
+  margin-right: 2rem;
+}
+
+.navbar-brand img {
+  height: 55px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: $text-color-light;
+  padding: 5px 8px;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: $text-color-light !important;
+}
+
+/* Ensure content is below the navbar */
+.app-content {
+}
+
+/* Navbar and sections */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: $primary-color;
+}
+
+.section-light {
+  background-color: $light-bg-color;
+}
+
+.section-dark {
+  background-color: $secondary-color;
+  background-image: radial-gradient(
+    50% 50%,
+    $bg-gradient-start 0%,
+    $bg-gradient-mid 37%,
+    $bg-gradient-end 87%
+  );
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+.section .text-content {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.section .heading {
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 0.9;
+}
+
+/* Adjust the back button margin */
+.button-back {
+  margin-top: 28px;
+}
+
+.alert {
+  font-weight: 700;
+}
+
+.alert-warning {
+  background-image: linear-gradient(322deg, #ff8a00 0%, #fbba6b 100%);
+  color: $animation-1;
+}
+.text-muted {
+  color: #9fa2ce !important;
+}
+.border-bottom {
+  border-bottom: $border1 !important;
+}
+.btn {
+  border-radius: 25px;
+}
+.btn-success {
+  background-color: $success;
+  border-color: $success;
+}
+.btn-primary {
+  background-color: $bg-gradient-start;
+  border-color: $bg-gradient-mid;
+}
+.btn-primary:hover {
+  background-color: #070086;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  background-color: $primary-color;
+  padding: 7px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.list-group {
+  --bs-list-group-border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.list-group-item-dark {
+  --bs-list-group-bg: var(--dark);
+  --bs-table-striped-bg: var(--deep-blue);
+  --bs-table-border-color: var(--border1);
+  --bs-list-group-border-color: var(--border1);
+  color: #fff;
+}
+
+.card {
+  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.1);
+  background: var(--deep-blue);
+  padding: 40px 20px 35px 35px;
+  border-radius: 25px;
+  color: #fff;
+}
+.login .card {
+  padding: 40px 35px 35px 35px;
+}
+
+.card .form-control {
+  padding: 18px 15px;
+  border-radius: 10px;
+}
+label {
+  color: #fff;
+}
+.badge {
+  font-size: 14px;
+  padding: 7px;
+}
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+// Mixin for reusable button styles
+@mixin custom-button-styles($bg-color) {
+  background-color: $primary-color;
+  color: $text-color-light;
+  padding: 12px;
+  border: none;
+  border-radius: 42px;
+  -webkit-border-radius: 42px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  container-type: inline-size;
+  position: relative;
+  text-align: left;
+
+  -webkit-transition: font-size 1s ease-in-out;
+  -o-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+
+  &:disabled {
+    background-color: lighten($bg-color, 20%);
+    cursor: not-allowed;
+  }
+}
+
+.contact-us-circle {
+  transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+}
+
+.custom-primary-button:hover .contact-us-circle {
+  -webkit-transform: translateX(-webkit-calc(100cqw - 100%));
+  -ms-transform: translateX(calc(100cqw - 100%));
+  transform: translateX(calc(100cqw - 100%));
+}
+
+// Primary button
+.custom-primary-button {
+  @include custom-button-styles($primary-color);
+}
+
+// Secondary button
+.custom-secondary-button {
+  @include custom-button-styles($secondary-color);
+}
+
+.hero img.character {
+  animation: move5 3s infinite linear;
+}
+
+@keyframes move5 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.login img.character {
+  z-index: 99;
+  animation: move5 3s infinite linear;
+}
+.alert img.character {
+  width: 45px;
+}
+
+// Styling the Accordion to use your color palette
+
+.accordion {
+  // background-color: $light-bg-color; // Background color for the accordion itself
+  border: none;
+
+  .accordion-item {
+    background-color: $accordion-bg; // Background for each accordion item
+    border: none;
+    border-radius: 25px 25px;
+    margin-bottom: 20px;
+
+    .accordion-header {
+      background-color: $accordion-bg;
+      color: $text-color-light; // Text color for the headers
+      padding: 1rem;
+      font-weight: bold;
+      border-radius: 25px;
+
+      &:hover {
+        background-color: darken($accordion-bg, 5%);
+      }
+    }
+
+    .accordion-button {
+      background-color: transparent;
+      color: $text-color-light;
+      border: none;
+      box-shadow: none;
+      font-size: 1.5rem;
+      padding: 5px 10px;
+
+      &:not(.collapsed) {
+        background-color: transparent;
+        color: $text-color-light;
+      }
+
+      &::after {
+        filter: brightness(0) invert(1); // Ensure arrow uses a light color
+      }
+    }
+
+    .accordion-body {
+      background-color: darken(
+        rgb(7 1 109 / 23%),
+        5%
+      ); // Slightly darker body background
+      color: $text-color-light; // Body text color
+      padding: 1rem;
+      border: 1px solid lighten($secondary-color, 10%);
+      border-radius: 0 0 25px 25px;
+    }
+  }
+}
+
+// Optional styling for FontAwesome icon (for the lock)
+.fa-lock {
+  color: $primary-color; // Make the lock icon match your primary color
+}
+
+.row-selected {
+  background: $primary-color;
+}
+
+.borderBottom {
+  border-bottom: $border1;
+}
+
+.footer {
+  border-top: $border1;
+}
+
+.footer a:link,
+.footer a:visited {
+  color: $text-color-light;
+  text-decoration: none;
+}
+
+.footer .fa-paper-plane {
+  color: $text-color-light;
+  margin-right: 15px;
+}
+
+.text-color-change {
+  color: $primary-color;
+  -webkit-animation: textChangeColor 8s infinite;
+  animation: textChangeColor 8s infinite;
+}
+
+@-webkit-keyframes textChangeColor {
+  0% {
+    color: $primary-color;
+  }
+
+  50% {
+    color: $animation-1;
+  }
+
+  100% {
+    color: $primary-color;
+  }
+}
+
+@keyframes textChangeColor {
+  0% {
+    color: $primary-color;
+  }
+
+  50% {
+    color: $animation-1;
+  }
+
+  100% {
+    color: $primary-color;
+  }
+}
+
+.color-change-nav {
+  background-color: $primary-color;
+  -webkit-animation: headerColor 8s infinite;
+  animation: headerColor 8s infinite;
+}
+
+@-webkit-keyframes headerColor {
+  0% {
+    background-color: $primary-color;
+  }
+
+  50% {
+    background-color: $animation-1;
+  }
+
+  100% {
+    background-color: $primary-color;
+  }
+}
+
+@keyframes headerColor {
+  0% {
+    background-color: $primary-color;
+  }
+
+  50% {
+    background-color: $animation-1;
+  }
+
+  100% {
+    background-color: $primary-color;
+  }
+}
+
+.stroke-text span {
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.stroke-color-change {
+  font-weight: 800;
+  -webkit-animation: strokeChangeColor 8s infinite;
+  animation: strokeChangeColor 8s infinite;
+  color: transparent;
+  -webkit-text-stroke: 1px $primary-color;
+  font-size: 3.5rem;
+}
+
+@-webkit-keyframes strokeChangeColor {
+  0% {
+    -webkit-text-stroke-color: $primary-color;
+  }
+
+  50% {
+    -webkit-text-stroke-color: $animation-1;
+  }
+
+  100% {
+    -webkit-text-stroke-color: $primary-color;
+  }
+}
+
+@keyframes strokeChangeColor {
+  0% {
+    -webkit-text-stroke-color: $primary-color;
+  }
+
+  50% {
+    -webkit-text-stroke-color: $animation-1;
+  }
+
+  100% {
+    -webkit-text-stroke-color: $primary-color;
+  }
+}
+
+@media (min-width: 300px) {
+  .section {
+    padding: 40px 0;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .section .heading {
+    font-size: 3.5rem;
+  }
+  .title img {
+    height: 40px;
+  }
+  .custom-primary-button {
+    width: 100%;
+  }
+  svg.contact-us-circle {
+    width: 30px;
+    height: 30px;
+  }
+  .hero img.character {
+    width: 102px;
+    bottom: 0;
+    left: 9%;    
+  }
+  .login img.character {
+    width: 85px;
+    bottom: auto;
+    top: 0;
+    right: 20px;
+  }
+  .btn-primary {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .btn-primary {
+    font-size: 14px;
+  }
+  .custom-primary-button {
+    width: 80%;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .hero img.character {
+    width: 202px;
+    bottom: 0;
+    left: 9%;    
+  }
+  .login img.character {
+    width: 210px;
+    top: auto;
+    bottom: 30px;
+    right: 25%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    padding: 80px 0;
+  }
+  .btn-primary {
+    font-size: 15px;
+  }
+  .section .heading {
+    font-size: 5rem;
+  }
+  .title img {
+    height: 70px;
+  }
+  .custom-primary-button {
+    width: 45%;
+  }
+  svg.contact-us-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .hero img {
+    width: 80%;
+  }
+  .login img.character {
+    width: 245px;
+    bottom: 30px;
+    right: 35%;
+  }
+}

@@ -1,0 +1,128 @@
+slides:
+  - quote:
+    image: https://www.jonathan-petitcolas.com/img/posts/ascii-art-converter/homer.png
+    slideType: image
+  - quote: |
+      > testing
+      
+      _alex walker_
+  - quote: |
+      > Ranking moves
+      
+      _Someone_
+    description: |
+      This demonstrates ranking some moves. Rank these moves 
+      
+      
+      This demonstrates ranking some moves. Rank these moves
+      Advanced Anchor and then you have Anchor which is different to a Back Checker but anchoring is the action and different to blitzing
+      Back Checker
+      anchoring
+      blitzing
+    xgid: XGID=----bBBBBAB-A-AaabbbbcAA--:0:0:1:66:0:0:0:0:10
+    hint: |
+      this is the hint/answer displayed when they have chosen
+    choices:
+      - |
+        1/2 3/4
+      - |
+        3/4 5/6
+    rank: 2, 1
+    slideType: board
+    showComponent: true
+  - quote: |
+      > Ranking moves
+      
+      _Someone_
+    description: |
+      This demonstrates ranking some moves where the content is text.
+      Who is in the better position
+    xgid: XGID=----bBBBBAB-A-AaabbbbcAA--:0:0:1:66:0:0:0:0:10
+    hint: |
+      this is the hint/answer displayed when they have chosen
+    choices:
+      - |
+        {{player}}
+      - |
+        {{opponent}}
+    rank: 2, 1
+    slideType: board
+    showComponent: true
+  - quote: |
+      > Choosing a move
+      
+      _Someone_
+    description: |
+      This demonstrates choosing from some options
+    xgid: XGID=----bBBBBAB-A-AaabbbbcAA--:0:0:1:66:0:0:0:0:10
+    hint: |
+      Which move is better
+    choices:
+      - |
+        1/2 3/4
+      - |
+        3/4 5/6
+    correct: 1
+    slideType: board
+    showComponent: true
+  - quote:
+    description: |
+      This demonstrates choosing from some options that AI presented.
+      
+      Which move is the best to play now
+    xgid: XGID=----bBBBBAB-A-AaabbbbcAA--:0:0:1:66:0:0:0:0:10
+    hint: |
+      find the worst move.
+    slideType: board
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      This demonstrates choosing from some options that AI presented.
+      
+      Which move is the worst to play now
+    xgid: XGID=----bBBBBAB-A-AaabbbbcAA--:0:0:1:66:0:0:0:0:10
+    hint:
+    slideType: board
+    showComponent: true
+  - quote:
+    description: |
+      Lets look at the possible rolls you can get. This is the basis of everything we need when making tough decisions in backgammon.
+      
+      Can you see from this what the most likely number to get is?
+      
+      Think of all the numbers that add together to give each number that you can roll
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: false
+    showCombinationsTable: true
+  - quote:
+    description: |
+      Lets look at the likelihood now of getting a specific number. There is an important pattern to try and learn here. Can you see what it is?
+      
+      Look at the colouring of the percentage chance of you getting a number. 6 is the most likely so you want to avoid leaving pieces unprotected, 6 away from an opponent.
+
+      On the other hand, if you need a 6 its far more likely that you'll get it than any other number. You can use this to your advantage.
+    dynamic: true
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: false
+  - quote:
+    description: |
+      Have a play by hovering on the probabilities and see how the rolls change that make some numbers easier than others.
+    dynamic: false
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      One of the first big surprises of the dice: your chances of rolling a 7 or an 8 are equal. Think about what that means for when you’re playing… you are just as safe at 7 away from a checker as you are 8.
+      
+      In a game then, you don't need to use up a 1 to move from 8 away, to 7 away, it's the same odds. Use your 1 more wisely.
+    dynamic: false
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true

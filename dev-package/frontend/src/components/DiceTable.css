@@ -1,0 +1,38 @@
+.dice-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.dice-table th,
+.dice-table td {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding: 3px;
+}
+
+.dice-table th {
+    /*background-color: #2d2f31;*/
+}
+
+.dice-table td {
+    /*background-color: #2d2f31;*/
+    cursor: pointer;
+}
+
+.dice-table tr:nth-child(even) td {
+    /*background-color: #f9f9f9;*/
+}
+
+.highlighted {
+    background-color: #2d2f31;
+}
+
+.highlighted-row {
+    background-color: #2d2f31;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}

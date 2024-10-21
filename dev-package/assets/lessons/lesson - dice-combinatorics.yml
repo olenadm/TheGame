@@ -1,0 +1,56 @@
+slides:
+  - quote: |
+      > The key ingredient is figuring out what to count and how to count it. 
+      > In the end, everything is just combinatorics all the way down!
+      > 
+      _Scott Spangler_
+    description: |
+      Good players develop a feel for the 21 possible outcomes of two dice rolls.
+      They also develop the patience to pause and count to figure out the probabilities when they don’t immediately come to mind. 
+      
+      The more often you pause to count out the possibilities on a backgammon board, the more often it will immediately come to mind.
+      
+      The objective here, is to work through finding the probability of getting a dice roll you need.
+    slideType: combinatronics
+    showComponent: false
+  - quote:
+    description: |
+      Lets look at the possible rolls you can get. This is the basis of everything we need when making tough decisions in backgammon.
+      
+      Can you see from this what the most likely number to get is?
+      
+      Think of all the numbers that add together to give each number that you can roll
+    slideType: combinatronics
+    showComponent: true
+    showProbabilitiesTable: false
+    showCombinationsTable: true
+  - quote:
+    description: |
+      Lets look at the likelihood now of getting a specific number. There is an important pattern to try and learn here. Can you see what it is?
+      
+      Look at the colouring of the percentage chance of you getting a number. 6 is the most likely so you want to avoid leaving pieces unprotected, 6 away from an opponent.
+
+      On the other hand, if you need a 6 its far more likely that you'll get it than any other number. You can use this to your advantage.
+    dynamic: false
+    slideType: combinatronics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: false
+  - quote:
+    description: |
+      Have a play by hovering on the probabilities and see how the rolls change that make some numbers easier than others.
+    dynamic: false
+    slideType: combinatronics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      One of the first big surprises of the dice: your chances of rolling a 7 or an 8 are equal. Think about what that means for when you’re playing… you are just as safe at 7 away from a checker as you are 8.
+      
+      In a game then, you don't need to use up a 1 to move from 8 away, to 7 away, it's the same odds. Use your 1 more wisely.
+    dynamic: false
+    slideType: combinatronics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true

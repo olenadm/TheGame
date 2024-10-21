@@ -1,0 +1,97 @@
+/* src/components/LessonDetail.css */
+.card {
+  padding: 25px 0px;
+}
+
+.table-dark {
+  --bs-table-bg: #050069;
+  --bs-table-striped-bg: #02004c;
+  --bs-table-border-color: rgba(255, 255, 255, 0.15);
+}
+
+.lesson-detail-container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.board-container {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.info-container {
+  padding: 10px;
+  min-height: 300px;
+}
+
+.best-move {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+.table-highlight-blue {
+  background-color: #007bff !important; /* Bootstrap primary blue */
+  color: white !important; /* Make text white for better contrast */
+}
+
+.table-highlight-green {
+  background-color: #28a745 !important; /* Bootstrap success green */
+  color: white !important; /* Make text white for better contrast */
+}
+
+/* Optional: Hover effect for all table rows to highlight them when hovered */
+.table-hover tbody tr:hover {
+  background-color: #e9ecef; /* Light gray for hover effect */
+}
+/* Backgammon board itself should not exceed available screen size */
+#bglogContainer {
+  width: 96%; /* Ensures the board doesn't exceed the container width */
+  /*height: 60vh; !* Set max height relative to viewport *!*/
+  /*width: auto;*/
+  /*height: auto;*/
+  margin: 0 auto; /* Center the board */
+  display: block;
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.description {
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+  padding: 15px;
+  background: #02004c;
+  border-radius: 10px;
+}
+.hint {
+  white-space: pre-wrap;
+  line-height: 2;
+}
+/* Custom styles for blockquotes */
+.blockquote {
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-style: italic;
+  background-color: #040d32;
+  color: #fefefe;
+  border-left: 10px solid #070086;
+  border-radius: 0 10px 10px 0;
+}
+
+.blockquote p {
+  margin: 0;
+}
+
+.react-tooltip {
+  background: #070086 !important;
+}
+
+.blockquote footer {
+  margin-top: 10px;
+  font-size: 0.9em;
+  text-align: right;
+  color: #777;
+}

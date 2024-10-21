@@ -1,0 +1,404 @@
+slides:
+  - quote: |
+      > The key ingredient is figuring out what to count and how to count it. In the end, everything is just combinatorics all the way down!
+      > 
+      > _Scott Spangler_
+    description: |
+      Good players begin to develop a feel for playing the game in terms of 21 possible outcomes of two dice rolls. They develop the feel through patience to pause and count to figure out the probabilities
+      The more often you pause to count out the possibilities on a backgammon board, the more often it will immediately come to mind, the more it arrives at the level of feel.
+    slideType: Intro
+    showComponent: false
+  - quote:
+    description: |
+      If you want to get past beginner level at Backgammon,  develop a natural sense for the probabilities of the game.
+      The first chart is the most important – the possible combinations of rolling two six-sided dice.
+      These are all the possible rolls in the game – What are the odds of being able to move a checker 4 spaces ahead with the roll of two dice?
+    hint: |
+      2-2, 1-3, 3-1, 4-1, 1-4, 4-2, 2-4, 4-3, 3-4, 4-4, 5-4, 4-5, 4-6, 6-4 -- 14/36
+    choices:
+      - 25%
+      - 34%
+      - 39%
+      - 44%
+    correct: 3
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What are the odds of being able to move a checker 10 spaces with two dice?
+    hint: |
+      You have to combine all possible rolls! Slow down and get the counting in. The more you slow down the counting of combinatorics, the more quickly your mind will get used to it. 
+      Slow down to speed up.
+    choices:
+      - 1/36
+      - 2/36
+      - 3/36
+      - 4/36
+    correct: 3
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What are the odds of being able to move a checker 9 spaces with two dice?
+    hint: |
+      Slow down to speed up. You’re not going to get expert at backgammon any time soon, so just patiently learn this part.
+      Slow down to speed up.
+    choices:
+      - 2/36
+      - 3/36
+      - 4/36
+      - 5/36
+    correct: 4
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What are the odds of being able to move a checker a 8 spaces with two dice?
+    xgid: ''
+    hint: |
+      Just sort out the combinations, combine them, and divide them by 36. Slow down to speed up.
+    choices:
+      - 4/36
+      - 5/36
+      - 6/36
+    correct: 3
+    slideType: combinatorics
+    showComponent: false
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What are the odds of being able to move a checker 7 spaces with two dice?
+    hint: |
+      One of the first big surprises of the dice: your chances of rolling a 7 or an 8 are equal. Think about what that means for when you’re playing … you are just as safe at 7 away as you are 8.
+    choices:
+      - 5/36
+      - 6/36
+      - 7/36
+    correct: 2
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What are the odds of being able to move a checker 6 spaces with two dice?
+    hint: |
+      Don’t double count.
+    choices:
+      - 15/36
+      - 16/36
+      - 17/36
+      - 18/36
+    correct: 3
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What has equal odds of happening after the roll of the dice?
+    hint: |
+      Just go slow in the counting. And enjoy another surprising discovery about the probabilities of dice rolls.
+    choices:
+      - Being able to move a checker 4 or 5 spaces.
+      - Being able to move a checker 2 or 3 spaces.
+      - Being able to move a checker 11 or 12 spaces.
+    correct: 1
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What are the odds you will roll a double with two dice?
+    hint: |
+      Guess before you count, if you didn't already know the answer.
+    choices:
+      - 6/36
+      - 9/36
+      - 12/36
+    correct: 1
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What is the difference in odds between being able to move a checker 1 space or 2 spaces with the roll of the dice?
+    hint: |
+      Thin margins often make the difference over the course of a game.
+    choices:
+      - 0/36
+      - 1/36
+      - 2/36
+      - 3/36
+    correct: 2
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What is the difference in odds between being able to move 6 or 7 spaces after you roll?
+    hint: |
+      Count slow! You’ll always get it right.
+    choices:
+      - 6/36
+      - 8/36
+      - 11/36
+      - 14/36
+    correct: 3
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What are the odds of rolling either a 5 or a 6 with two dice?
+    hint: |
+      Rolling a pure number is different than whether you can move that number of spaces.
+    choices:
+      - 20/36
+      - 21/36
+      - 22/36
+      - 23/36
+    correct: 3
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      What are the chances of being able to move a checker 8 or 9 spaces after a roll of the dice?
+    hint: |
+      Add up the odds of those two combinations. Doubles count!
+    choices:
+      - 8/36
+      - 10/36
+      - 11/36
+      - 13/36
+    correct: 3
+    slideType: combinatorics
+    showComponent: true
+    showProbabilitiesTable: true
+    showCombinationsTable: true
+  - quote:
+    description: |
+      Now let’s look at chances to hit the opponent’s checker within a distance of 6 spaces. There's a new chart to look at. 
+      Rolling one of the dice, the chances of hitting any space within six is equal – 11/36.
+      How much better of a chance do you have of rolling a 6 using two dice, than with one?
+    hint: |
+      Read carefully, patiently disentangle the question. Your brain probably isn't excited about giving you the answer, just get used to challenging your mind.
+    choices:
+      - 18
+      - 21
+      - 24
+      - 36
+    correct: 2
+    slideType: Distance Chart 1-6
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      Imagine it's your turn, and your opponent has two open checkers in front of you. One is 1 space away, and the other is 6 spaces away. What are your odds of hitting one of them?
+    hint: |
+      Don't double count!
+    choices:
+      - 20/36
+      - 22/36
+      - 24/36
+      - 26/36
+    correct: 3
+    slideType: Distance Chart 1-6
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      Taking the lessons of raw dice math to the backgammon board, let’s look at chances to hit the opponent’s checker within a distance of 6 spaces.
+      With one of the dice, the chances of hitting any space within six is equal – 11/36. With two – the odds go up: unevenly.
+      How much better of a chance do you have of rolling a number that amounts to 6 with two dice, than with 5?"
+    hint: |
+      Combinatorics are often about adding everything up, and then making a calculation on what the better odds are you might be able to hit, or escape, or build a new anchor. There are multiple choices like that usually, each turn. So … patiently learn it here.
+      Every great backgammon and professional will tell you the same thing.
+    choices:
+      - 1/36
+      - 2/36
+      - 3/36
+      - 4/36
+    correct: 2
+    slideType: Distance Chart 1-6
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      Is it just as safe to move your piece 4 places away from an opponent’s checker as 5 places away?
+    hint: |
+      7 and 8 have equal odds of being rolled as well.
+    choices:
+      - Yes
+      - No
+    correct: 1
+    slideType: Distance Chart 1-6
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      Imagine it's your turn, and your opponent has two open checkers in front of you. One is 1 space away, and the other is 6 spaces away. What are your odds of being able to hitting both of them?
+    hint: |
+      Don't double count!
+    choices:
+      - 0/36
+      - 2/36
+      - 4/36
+      - 8/36
+    correct: 2
+    slideType: Distance Chart 1-6
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      Moving on now to the probabilities of both rolled dice adding up to a number greater than 6.
+      Just like 4 and 5 sharing a 42% chance of being achieved by rolling either 1 or a combination of two dice, 6 and 7 both share a 6/36, or ⅙ chance.
+      How much better of a chance do you have hitting a 9 than a 10?"
+    hint: |
+      We’re back to subtracting the probabilities to getting our answer.
+    choices:
+      - 1/36
+      - 2/36
+      - 3/36
+      - 5/36
+    correct: 2
+    slideType: Distance Chart 7-24
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      True or false: If your checker is at a distance of 13 or 14 spaces on the backgammon table from an your opponent, you can't be hit.
+    hint: |
+      No hint, just look at the chart!
+    choices:
+      - True
+      - False
+    correct: 1
+    slideType: Distance Chart 7-24
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      13, 14, 17, 19, 21, 22, 23 are distances on the board that your opponent can't hit you from. 
+      How many of the other numbers does you opponent have a 2/36 or less chance of hitting you?
+    hint: |
+      No hint, just look at the chart!
+    choices:
+      - 1
+      - 3
+      - 5
+      - 6
+    correct: 1
+    slideType: Distance Chart 7-24
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote: |
+    description: |
+      There’s one more key part of the game involving dice roll probabilities – the chances you or your opponent can roll back of the bar.
+      At the start of the game, each player has their own six point pre-filled. And barring disaster, it’s the opening odds for thinking about the chances that a checker will be back in play: There’s a 97% chance a checker can roll back on to the game board if only the 6 point is occupied by an anchor – because only a double 6 will block a player from rolling in.
+      It’s from here that you can think about the relative value of filling in your inner board, or avoid getting hit – the odds of rolling in are quite good with two points filled at 90%. The big drop off goes from having a 4 point board to a 5 point board.\n\nMany players are better at playing in terms of the real probabilities that their opponents will roll in than their own probabilities of rolling in when they come off the bar. That's a normal bias, but it will cost you if you don't level it out."
+    hint:
+    slideType: Rolling in Chart inner / outer board
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      How much better are your odds of rolling in if you have 3 open points to roll into than if you had 1?
+      It’s from here that you can think about the relative value of filling in your inner board, or avoiding getting hit as your opponent fills out theirs.
+    xgid: ''
+    hint: |
+      No hint, just look at the chart!
+    choices:
+      - 31%
+      - 44%
+      - 56%
+    correct: 2
+    slideType: Rolling in Chart inner / outer board
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      Where is the biggest drop off in odds on rolling in off the bar?
+    hint: |
+      No hint, just look at the chart!
+    choices:
+      - Between 1 and 2 points filled
+      - Between 2 and 3 points filled
+      - Between 3 and 4 points filled
+      - Between 4 and 5 points filled
+    correct: 4
+    slideType: Rolling in Chart inner / outer board
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      One last chart – the odds of rolling in when two checkers are on the bar – this is a stat that opens your eyes on how valuable it is to get two checkers on the bar.
+      With two pieces on the bar, just having 1 point filled in the inner board sets up a 30% chance the player will have to roll a second time to get both pieces back on the bar. With two points on the bar, it’s better than 50/50 there’s going to have to be a second roll.
+      What number of points on the board has the largest drop in real percentage chances of coming in between 1 and 2 checkers on the bar?
+    hint: |
+      No hint, just look at the chart!
+    choices:
+      - 1
+      - 2
+      - 3
+      - 4
+    correct: 3
+    slideType: Rolling in Chart inner / outer board with two checkers
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      One last chart – the odds of rolling in when two checkers are on the bar – this is a stat that opens your eyes on how valuable it is to get two checkers on the bar.
+      With two pieces on the bar, just having 1 point filled in the inner board sets up a 30% chance the player will have to roll a second time to get both pieces back on the bar. With two points on the bar, it’s better than 50/50 there’s going to have to be a second roll.
+      What number of points on the board has the largest drop in relative percentage chances of coming in between 1 and 2 checkers on the bar?
+    hint: |
+      No hint, just look at the chart!
+    choices:
+      - 1
+      - 2
+      - 3
+      - 4
+    correct: 1
+    slideType: Rolling in Chart inner / outer board with two checkers
+    showComponent: false
+    showBestMove: false
+    showDice: false
+  - quote:
+    description: |
+      Summary: 
+
+      This lesson gave you a taste of the core probabilities of the game.      
+      It takes a while to get a sense of feel on a choice of plays that have 1/36 and 2/36 odds.
+      But it doesn't take long to get a feel between 6/36 and 3/36. Just work your way through with our drills.
+    hint: |
+      No hint, just look at the chart!
+    slideType: Summary
+    showComponent: false
+    showBestMove: false
+    showDice: false
+

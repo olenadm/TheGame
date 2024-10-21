@@ -1,0 +1,27 @@
+.board-container {
+    display: block;
+}
+
+#bglogContainer {
+    margin: 0 auto;
+    max-width: 2400px;
+}
+#svgboard {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+#idInput {
+    display: flex;
+    margin: 15px 0;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#idInput input {
+    flex-grow: 1; /* Allows the input to grow to take available space */
+    padding: 12px; /* Optional: better spacing inside the input */
+    border-radius:10px;
+    border:0;
+}

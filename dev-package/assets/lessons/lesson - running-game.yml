@@ -1,0 +1,370 @@
+slides:
+  - quote: |
+      "When you're up in the race, race." - Kit Woolsey
+    description: |
+      The running game is a strategy above all focused on removing your pieces from the board before the other player – taking advantage of a lead in pips over other other strategic opportunities.
+    xgid:
+    hint:
+    showComponent: false
+    showBestMove: false
+    choices:
+      - 8/5, 6/5
+      - 13/10, 10/9
+      - 24/20
+      - 24/23 13/10
+    correct: 1
+  - quote:
+    description: |
+      We’re going to start with a classic running game, and look at each move from {{player}} and {{opponent}}’s Perspective.
+      {{player}} goes first, rolling 6-5. 
+      First, think of what {{player}}'s best move is.
+    xgid: XGID=-b----E-C---eE---c-e----B-:0:0:1:56:0:0:0:0:10
+    hint: |
+      The correct play is 24/13.
+      It’s a good opening roll. One of your two pieces at the back is now on its merry way home, safe and sound. It’s also setting you up to play a running game.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Now, think of the worst possible move {{player}} can come up with. Does this leave two pieces open, and do little that will help {{player}} on their next move?
+    xgid: XGID=-b----E-C---eE---c-e----B-:0:0:1:56:0:0:0:0:10
+    hint: A very bad play here would be 13/7 8/3 - {{player}} would leave two open shots with different dice numbers to {{opponent}} who is trying to get those back pieces moving anyway.  There are so many rolls for {{opponent}} that hit a 3 or a 6 that you would already be hoping for miracles to avoid losing.
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      The game continues, and {{player}} rolls a 6-1:
+      What’s the best move here for {{player}}?
+    xgid: XGID=-b----E-C---eF---c-e----A-:0:0:-1:61:0:0:0:0:10
+    hint: You want to stop {{opponent}} on the 24 from leaving his inner board.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      What would be the worst move here for {{player}}?
+    xgid: XGID=-b----E-C---eF---c-e----A-:0:0:-1:61:0:0:0:0:10
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      {{player}} moves 13/7 and 8/7 on the 2nd roll of the game. {{player}} is more happy to make the bar point - this is one of the most valuable points you can make early in the game.
+      {{opponent}} has 1 checker stuck behind a wall blocking the exit. Now there is no one roll that gets {{opponent}} to safety at point 13.
+    xgid: XGID=-b----E-C---dF---bbe----A-:0:0:-1:00:0:0:0:0:10
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      {{player}} rolls a 3-1 on Roll 3. What is {{player}}'s best move?
+    choices:
+      - 8/5, 6/5
+      - 13/10, 10/9
+      - 24/20
+      - 24/23 13/10
+    correct: 1
+    xgid: XGID=-b----E-C---dF---bbe----A-:0:0:1:13:0:0:0:0:10
+    hint: The golden point is truly golden. Even the most eager racer should stop to build a point on his 5 or even his 4 point.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Roll 4, {{player}} rolls 5-4. Now that {{opponent}} made the 5 point, they can think about escaping the back checker the next turn.
+      {{player}} is well aware of that and wants to keep building that prime wall to stop {{opponent}}’s last checker from escaping.
+      {{player}} is faced with the question,
+    choices:
+      - Make a point on the 2? 7/2, 6/2
+      - Keep building the prime? 13/8, 13/9
+    correct: 2
+    xgid: XGID=-b----E-C---dF---bbe----A-:0:0:-1:45:0:0:0:0:10
+    hint: |
+      {{opponent}} is better off blocking {{player}} by building off the prime they already have. Are you worried about the open checker on the 9? The odds of hitting that spot is 4/36, 1/9. As you’ll begin to learn, an 11% chance of being hit is a great bargain in exchange for the chance to expand your prime. If {{opponent}} hits {{player}} next turn, the checker is advanced in the inner board more safely.
+    showComponent: true
+    showBestMove: true
+  - quote: |
+    description: |
+      Roll 5, what is {{player}} hoping to roll?    
+      Rank these three rolls
+    choices:
+      - 6-2
+      - 4-4
+      - 4-6
+    #    rank:
+    xgid: XGID=-b----E-C---dF---bbe----A-:0:0:-1:00:0:0:0:0:10
+    hint: |
+      1st: Double 4s fills out the 4 point in {{player}}’s inner board, and hits {{opponent}} on the 16 point. Distant 2nd is 6-2, which gets {{player}} out, increases {{opponent}}’s pip count, and costs half a roll next turn to get in. 3rd place, 4-6m; It leaves {{player}} praying that {{opponent}} doesn’t roll a 2 next turn. There’s an almost ⅓ chance {{opponent}} will roll a 2. That alone would make {opponent}} the strong favorite to win the game.
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      Roll 5, {{player}} ends up rolling a 5-4
+      It’s a chance for escape, and {{player}} takes the checker on the 24 point to the 15 point.
+      If {{opponent}} rolls a 3 or a 2-1, {{player}} goes behind the wall and has to try to escape again. There’s about a ⅓ chance of it happening.
+      This is a classic moment in the running game, {{player}} is a rabbit out in the open, a short hop from safety. Will Rabbit survive?
+    xgid: XGID=-b----E-C---dF---bbe----A-:0:0:1:45:0:0:0:0:10
+    showComponent: true
+    showBestMove: false
+  - quote: |
+    description: |
+      On Roll 6, {{player}} rolls a 4-3. The 4 makes a 4th point on the 8, and puts the 3 on the 9.
+      {{opponent}} is on the Bar, and has to roll in.
+      {{player}} is in a strong position, but still needs to get the two back checkers home. Should {{player}} have moved one of them to the 21 spot with the 3 instead of the 9?
+    choices:
+      - Yes
+      - No
+    correct: 1
+    xgid: XGID=-b----E-C---bF-aabbe-----A:0:0:-1:43:0:0:0:0:10
+    hint: O’s job is to get out of the way of being hit. Having 3 pieces at the back and the other 12 on the other side of the board is like having 3 rabbits have to run through the open field. The correct move is to put a checker on the 9 point.
+    showComponent: true
+    showBestMove: false
+  - quote: |
+    description: |
+      Roll 7 for {{player}} is 6-5. Black had a 5.5% chance of rolling that. There are only two 6-5 rolls possible out of thirty-six. {{player}} is right back on track with the running game. Now only {{opponent}}’s back checkers are in the way of {{player}}’s run home.  
+      {{opponent}} has to think carefully about staying or running now, only trying to get those two pieces out out if {{opponent}} is ahead in the race.
+    xgid: XGID=-b----E-C---bFAaabbe------:0:0:1:56:0:0:0:0:10
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      Now we’re tuning into the game a few moves later in the game, {{player}} it’s Roll 12.
+      {{player}} rolls a 5-1
+      {{opponent}}’s two back checkers are on the 18 point. {{player}} has got two anchors to aim for with his back anchor on 13.
+      What’s the best move?
+    choices:
+      - 13/8 13/12
+      - 13/8 4/3
+      - 10/9 9/4
+      - 8/3 6/5
+    correct: 3
+    xgid: XGID=---AABCbC-C--B--aaccbab---:0:0:1:51:0:0:0:0:10
+    hint: You’re likely to have at three or four more chances for a roll that gets those pieces off. And at the same time {{player}} build their inner board out from the 6 to the 4 point, in case you do have to to hit {{opponent}}.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Roll 13 {{player}} Rolls a 2-1      
+      {{player}} is behind in the race, but there’s still a chance {{opponent}} will leave an open shot. The best thing {{player}} can do now is prepare the best defense for that possibility. {{player}} can’t think about moving his two back checkers right now.
+      What’s {{player}}'s best move?
+    choices:
+      - 6/4, 9/8
+      - 7/6, 6/4
+    correct: 1
+    xgid: XGID=---ABBCbC-B--B--aaccbab---:0:0:-1:21:0:0:0:0:10
+    hint: One move gives {{player}} more spare checkers to fill in the 2 and the 1 point in future rolls. The other move creates a 6 point prime, which can’t be escaped from. Presented with the choice, take the sure thing, especially when it’s the best thing.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      On Roll 14 {{player}} rolls a 6-3.       
+      What’s the only safe use of the 3 on the die for {{player}} here?
+    choices:
+      - 13 point
+      - 10 point
+      - 8 point
+      - 3 point
+    correct: 4
+    xgid: XGID=---ABBCbC-B--B---bcbbbb---:0:0:1:63:0:0:0:0:10
+    hint: It’s a bit of a trick question, because {{player}} must play a 6. It’s not possible to play a 6 on the 13 point or 10 point without leaving a piece for White to hit. The only place to play a six is on the 8 point. That leaves moving the spare checker on the 6 to the 3.
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      On Roll 15, {{player}} rolls a 4-1. Identify the worst move for White.
+    choices:
+      - 18/14, 14/13
+      - 4/1, 2/1
+      - 7/3, 8/7
+      - 7/3, 3/2
+    correct: 2
+    xgid: XGID=--ABBBBbB-B--B---bcbbbb---:0:0:-1:41:0:0:0:0:10
+    hint: Breaking up your inner board is nightmarishly bad, 4/1, 2/1 blows up your chance to imprison {{opponent}} if you do get a chance to hit. Also terrible is leaving two of O’s pieces open for being hit. The best move is to take the spare checker on the 7, and put it on the 2. It builds out the inner board without breaking your 6 point prime.
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      On Roll 16 - {{player}} Rolls 6-2. Black is ahead in the race by about the average amount of a roll, 8 pips. {{player}} has to move a 6, there’s two kinds of safer options and a risky option. Rank the 3 options.
+    choices:
+      - 13/11 11/5
+      - 10/8, 10/4
+      - 8/2, 8/6
+    rank: 2, 1, 3
+    xgid: XGID=--ABBBBbB-B--B---bbbbbba--:0:0:1:62:0:0:0:0:10
+    hint: Don’t leave an open piece on the 13, there’s almost a 50% chance {{opponent}} will hit it, and possibly cost you the game. When you are in a race, you want to move the furthest back anchors toward the inner board. It will be harder for your other four pieces to get home if you go with 8/2, 8/6. 10/8, 10/4 leaves you with the most options, and critically, a spare checker insurance in case you roll a 6 and don’t want to break up your anchor on 13.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Roll 17, {{player}} rolls a 4-2. Is it better to leave yourself options to fill in the 1 point or 2 point next turn, or extend the 6 point prime deeper into your inner board? What’s your best move?
+    choices:
+      - 7/3, 3/1
+      - 8/4, 4/2
+      - 8/4, 8,6
+      - 7/3, 8/6
+    correct: 2
+    xgid: XGID=--ABBBBbB-B--B---bbbbbba--:0:0:-1:42:0:0:0:0:10
+    hint: It’s a different arrangement of checkers since the last move, but the principle remains the same – keep your 6 point prime in place. 8/4 4/2 is the best move by a mile.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      On roll 18, {{player}} rolls a 2-2. {{player}} got doubles on the 4th turn. This is the moment {{player}} has been waiting for. Doubles offer a safe and easy way to bring the back anchor points from 13 to the other side of the table. The odds of rolling a double are ⅙, so it’s not surprising that {{player}} got a double by now. {{player}} is racing, so there’s only one job to do – bring the back checkers as close as possible to the inner board. 13/9(2) What’s the only roll now that {{player}} is dreading next turn?
+    choices:
+      - 5-5
+      - 6-6
+      - 4-4
+      - 6-5
+    correct: 4
+    xgid:  XGID=--ABCBBbCB-------abbbbbb--:0:0:1:22:0:0:0:0:10
+    hint: Only 1 roll leaves an open shot for {{opponent}} to get back in the game.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Roll 19 - {{player}} rolls a 3-1      
+      3rd time is the charm, look at {{player}}’s options, what’s the best move?
+    choices:
+      - 18/15, 15/4
+      - 18/15, 8/7
+      - 8/5, 5/4
+      - 8/5, 7/6
+    correct: 3
+    xgid: XGID=--ABCBBbCB--------bbbcbb--:0:0:-1:31:0:0:0:0:10
+    hint: Still behind in the race, {{player}}’s best chance is to hit {{opponent}}. The only pieces that can do that are on the 18, so they stay put. Looking on the inner board. We have a 6 point prime – new arrangement of pieces, but the same logic applies, move the spare checker from the 8 point to the 4.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Roll 20 - {{player}} rolls a 5-4
+      What’s the best move for {{player}}, who is racing to start rolling off the board?
+    choices:
+      - 8/3, 6/2
+      - 6/1, 6/2
+      - 9/4, 9/5
+      - 8/3, 5/1
+    correct: 3
+    xgid: XGID=--ABCBBbCB--------bbbcbb--:0:0:1:54:0:0:0:0:10
+    hint: When you’re in a race, race. The two pieces on the 9 go to the front. There is no roll now next turn that will force {{player}} to leave a piece open for {{opponent}} to hit with a 1.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Roll 20 - {{player}} rolls a 6-2. What is White to do here? Break up the 6 point prime? Or address the back checkers?
+    choice:
+      - 7/1, 4/2
+      - 7/1, 7/5
+      - 18/12, 18/6
+      - 18/12, 4/2
+    correct: 1
+    xgid: XGID=--ABDCBbC---------bbbcbb--:0:0:-1:62:0:0:0:0:10
+    hint: Still behind in the race, {{player}} doesn’t have a good reason to move the two back checkers. Leaving one open for {{opponent}} to hit just increases the chances {{opponent}} will win, not just by racing, but by keeping {{player}} on the bar. {{player}} moves one checker from the 7, and keeps the other one spare so that the anchor on 18 can stay intact, in case there’s another chance to hit {{opponent}} in a few turns.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Roll 21 - {{player}} Rolls a 5-5. When you’re ahead in a race, and you have a chance to move all your pieces behind your opponent, do you take it?
+    choices: #todo - this is a new format of move
+      - 8/3(3), 5/off
+      - 8/3(2), 6/1(2)
+    correct: 1
+    xgid: XGID=--ABDCBbC---------abbbbca-:0:0:1:55:0:0:0:0:10
+    hint: You most certainly do. Don’t wait around, take what is - highly probably - yours.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      {{opponent}} now is more than 3 rolls (about 21 pips) behind {{player}}. Odds are pretty slim for a comeback. {{player}} doesn’t concede yet, but the thought has crossed both players’ minds. After a few more big rolls for {{opponent}} and small ones for {{player}}, the outcome is settled, {{player}} concedes.
+      {{opponent}} wins the running game.
+    xgid: XGID=--AEDBBb----------abbbbca-:0:0:1:00:0:0:0:0:10
+    hint:
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      In reflection:
+      1. {{opponent}}’s 6-5 roll shaped the entire strategy for all of {{opponent}}’s rolls that came after – a race. Already by {{opponent}}’s 2nd roll, there was only 1 checker at the back.
+      2. {{opponent}} won the game, but was hit in the open field along the way. You can win a race game despite being hit, but try to minimize it.
+      3. You want the pip count in your favor – at least half an average roll, 4 pips. If the other player’s pip count starts going in their direction, let’s say they roll a big double, the game state has changed. You need to think about switching strategies.
+      4. Toward the end of the game, {{{player}} wasn’t only behind in the race. {{player}} was also contained at the 18, forced to move pieces that were already in O’s inner-board in order to have a chance of hitting {{opponent}} . That’s called “wasting” moves.
+    showComponent: false
+    showBestMove: false
+    xgid: XGID=--AEDBBb----------abbbbca-:0:0:1:00:0:0:0:0:10
+  - quote:
+    description: |
+      Now we’re going to look at some individual moments that get into important parts of the running game strategy.      
+      Let’s start with – when do you run  White?
+      Here are 4 routes to go on a 5-3 roll.
+    choices:
+      - Give more flexibility to your inner board development, and send a checker from 13/8, and then 13/10
+      - Build a new point in your inner board – of some strategic bonus? 8/3, 6/3
+      - Move your back checker from 24/21 and then 21/16 and make a run for it.
+      - Move your back checker to be ready the next turn to escape and develop my inner board a bit, 24/21, 8/3.
+    correct: 3
+    xgid: XGID=-a----EBF---bB---adcb--b--:0:0:-1:53:0:0:0:0:10
+    hint: If it puts you ahead in the pip count, run with your back checker as far as you can – don’t wait for next turn to escape. You’ll be 1 roll ahead of the opponent when it’s their turn, 8 pips. That player has to roll a 4 to hit you.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      This time {{player}} rolls a 5-4. What’s the best move?
+    choices:
+      - 24/15
+      - 8/3, 4/3
+      - 24/20, 8/3
+      - 24/20, 6/1
+    Correct: 1
+    xgid: XGID=-a----EBF---bB---adcb--b--:0:0:-1:54:0:0:0:0:10
+    hint: It’s an even easier decision to make a run for it, since it’s 1 pip higher than you saw in the previous example 5-3.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Now rank the rolls in terms of preference for {{player}}:
+    choices:
+      - 5-4
+      - 6-4
+      - 5-3
+    rank: 2, 1, 3
+    xgid: XGID=-a----EBF---bB---adcb--b--:0:0:-1:00:0:0:0:0:10
+    hint: The number of pips is the difference, you will use all three rolls to escape from the 24 spot. Not only this, {{opponent}} has fewer chances to hit {{player}} on the 14 point than the 15 or 16 point.
+    showComponent: true
+    showBestMove: false
+  - quote:
+    description: |
+      Now we’re going to look at a late stage of a race. {{player}} has rolled a 6-4. What’s the best move?
+    choice:
+      - 8/2, 8/4
+      - 13/7, 6/2
+      - 13/3
+    correct: 3
+    xgid: XGID=-a-adBd-b---Cc--ACBBB-----:0:0:-1:64:0:0:0:0:10
+    hint: You’re racing, so get a piece from the back into the inner board. A small strategic bonus is that the checker makes a point on the 3. The other moves just make the race harder for yourself. Why leave something open, or break and anchor on a turn when you can get a piece in your inner board?
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      {{player}} rolls a 4-4. {{player}} is way behind in the race, even after the 16 pips in the 4-4, {{player}} will still be about 7 rolls behind {{opponent}}. Best move?
+    xgid: XGID=-a-bdBd-b---Cb--ACBBB-----:0:0:1:44:0:0:0:0:10
+    hint: |
+      {{player}} needs to stay behind as much as possible. The checkers on the 20 have to stay there. X’s inner board is now more of a strategic asset. {{opponent}} will be a lot more cautious now.
+    showComponent: true
+    showBestMove: true
+  - quote:
+    description: |
+      Rolling 6-3, {{player}} is running, and the 6 forces {{player}} to leave an open shot to {{opponent}} next turn. Which move leaves {{player}} open to more shots from {{opponent}}?
+    choices:
+      - 8/2, 4,1
+      - 13/4
+    correct: 2
+    xgid: XGID=-a-bdBd-b---Cb--AA-BBBB---:0:0:-1:36:0:0:0:0:10
+    hint: 17 out of 36 rolls will hit Black on the 13, almost half. Watch out for rolls that don’t seem like they have a chance of hitting you. Turns out there’s a 1 in 6 chance of rolling a number that adds up to 8, the same odds as rolling a 7. Add that to  {{opponent}}’s 11 in 26 chance of rolling a 1.
+    showComponent: true
+    showBestMove: true
+  - quote: |
+    description: |
+      Did {{player}} make the right move here with 8/2, 4,1, instead of 13/4?
+    choices:
+      - Right move
+      - Wrong move
+    correct: 1
+    xgid: XGID=-babcBd-a---Cb--AA-BBBB---:0:0:-1:00:0:0:0:0:10
+    hint: Consider that in a race you want to have the smallest odds of being hit on the next roll, not two rolls from now.
+    showComponent: true
+    showBestMove: true
