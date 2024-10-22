@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
-import { Container, Card, Button, Col, Row } from "react-bootstrap";
+import { Container, Card, Col, Row } from "react-bootstrap";
 import Board from "./Board"; // Import the Board component
 import BoardChoices from "./choices/BoardChoices"; // Import Options
 import axios from "axios";
@@ -102,8 +102,10 @@ const DrillDetail = () => {
   if (!drill) return <div>Loading...</div>;
 
   return (
-    <Container className="mt-5">
+    <Container>
       <section className="section-dark section pt-4 lesson">
+      <Card className="mt-4">
+      <Card.Header>
         <Row className="align-items-center justify-content-between">
           <Col xs={6}>
             <button
@@ -131,30 +133,22 @@ const DrillDetail = () => {
                 </button>
           </Col>
         </Row>
-        <Card className="mt-4">
-          <Card.Header as="h2">Drill Practice - {section}</Card.Header>
+        </Card.Header>
+        
+         
           <Card.Body>
+          <h2 className='mb-3'>Drill Practice - {section}</h2>
             <Row>
               <Col md={8} className="board-container">
                 <Row>
                   {drill.XGID && <Board xgid={drill.XGID} theme={theme} />}{" "}
                   {/* Display the board */}
                 </Row>
-                <button
-                  className="btn btn-success"
-                  onClick={nextDrill}
-                  disabled={false}
-                >
-                  Next Drill
-                  <FontAwesomeIcon
-                icon={faArrowRight}
-                style={{ marginLeft: "7px", fontSize: "1rem" }}
-              />
-                </button>
+               
               </Col>
               <Col md={4} className="info-container">
                 <Card.Text>{drill.Comment}</Card.Text> {/* Drill description */}
-                <Card.Text>{drill.XGID}</Card.Text>
+               
                 {bglogLoaded && (
                   <BoardChoices
                     moveData={bestMoveData}

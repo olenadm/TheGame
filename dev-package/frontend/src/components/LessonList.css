@@ -27,6 +27,7 @@
   background-color: #f9f9f9; /* Add a background color if needed */
   border: 1px solid #ddd; /* Optional border */
 }
+.progress-bar{background-color: #e62e3d;}
 .progress-bar-custom {
   height: 8px; /* Adjust the height to make it thinner */
   width: 100%; /* Adjust the width if necessary */

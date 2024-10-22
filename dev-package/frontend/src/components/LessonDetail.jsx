@@ -477,73 +477,80 @@ const LessonDetail = () => {
   const optionsProps = optionsComponentData?.getProps(slide);
 
   return (
-    <Container fluid className="mt-lg-5 px-xl-5">
-      <section className="section-dark section pt-4 lesson px-xl-5">
-        <Row className="align-items-center justify-content-between">
-          <Col xs={5} md={3} className="text-start">
-            <button
-              onClick={() => navigate("/lessons")}
-              className="btn btn-primary"
-            >
-              <FontAwesomeIcon
-                icon={faArrowLeft}
-                style={{ marginRight: "7px", fontSize: "1rem" }}
-              />{" "}
-              Back to Lessons
-            </button>
-          </Col>
+    <Container>
+      <section className="section-dark section pt-4 lesson">
+        <Card className="mt-4">
+          <Card.Header>
+            <Row className="align-items-center justify-content-between">
+              <Col xs={5} md={3} className="text-start">
+                <button
+                  onClick={() => navigate("/lessons")}
+                  className="btn btn-primary"
+                >
+                  <FontAwesomeIcon
+                    icon={faArrowLeft}
+                    style={{ marginRight: "7px", fontSize: "1rem" }}
+                  />{" "}
+                  Back to Lessons
+                </button>
+              </Col>
 
-          {/* XGID and current slide info aligned in the center */}
-          <Col xs={2} md={6} className="text-center">
-            <pre>{slide?.xgid}</pre>
-            <span>
-              {currentSlide + 1} / {lesson?.slides?.length}
-            </span>
-          </Col>
+              {/* XGID and current slide info aligned in the center */}
+              <Col xs={2} md={6} className="text-center">
+                {/*<pre>{slide?.xgid}</pre>*/}
+                <span>
+                  {currentSlide + 1} / {lesson?.slides?.length}
+                </span>
+              </Col>
 
-          {/* Next Slide button aligned to the right */}
-          <Col xs={5} md={3} className="text-end">
-            <button
-              onClick={nextSlide}
-              disabled={slide.ShowComponent && !nextButtonEnabled}
-              className="btn btn-primary"
-            >
-              Next Slide{" "}
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                style={{ marginLeft: "7px", fontSize: "1rem" }}
-              />
-            </button>
-          </Col>
-        </Row>
-        {currentSlide === -1 ? (
-          <Card className="mt-4">
-            <Card.Header as="h2">
-              {/*<button onClick={() => navigate('/lessons')} className="custom-secondary-button">Back to Lessons</button>*/}
-              Lesson {lessonId} - {lesson.title} - {currentSlide + 1} /{" "}
-              {lesson?.slides?.length}
-              {/*<button onClick={nextSlide} disabled={slide.ShowComponent && !nextButtonEnabled} className="custom-secondary-button">Next Slide</button>*/}
-              {/*<pre>{slide?.xgid}</pre>*/}
-            </Card.Header>
+              {/* Next Slide button aligned to the right */}
+              <Col xs={5} md={3} className="text-end">
+                <button
+                  onClick={nextSlide}
+                  disabled={slide.ShowComponent && !nextButtonEnabled}
+                  className="btn btn-primary"
+                >
+                  Next Slide{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    style={{ marginLeft: "7px", fontSize: "1rem" }}
+                  />
+                </button>
+              </Col>
+            </Row>
+          </Card.Header>
+          {currentSlide === -1 ? (
             <Card.Body>
               <Row>
+                <Col>
+                  <h2 className="mb-3">
+                    {" "}
+                    {/*<button onClick={() => navigate('/lessons')} className="custom-secondary-button">Back to Lessons</button>*/}
+                    Lesson {lessonId} - {lesson.title} - {currentSlide + 1} /{" "}
+                    {lesson?.slides?.length}
+                    {/*<button onClick={nextSlide} disabled={slide.ShowComponent && !nextButtonEnabled} className="custom-secondary-button">Next Slide</button>*/}
+                    {/*<pre>{slide?.xgid}</pre>*/}
+                  </h2>
+                </Col>
+              </Row>
+              <Row>
                 <Col md={7}>
-                <div className='description p-4'>
-                  <Card.Text>{lesson.description}</Card.Text>
-                  <button
-                    onClick={nextSlide}
-                    className="mb-2 mb-md-0 mt-md-4 py-2 custom-primary-button color-change-nav"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      className="bi bi-circle-fill contact-us-circle"
-                      viewBox="0 0 16 16"
+                  <div className="description p-4">
+                    <Card.Text>{lesson.description}</Card.Text>
+                    <button
+                      onClick={nextSlide}
+                      className="mb-2 mb-md-0 mt-md-4 py-2 custom-primary-button color-change-nav"
                     >
-                      <circle cx="8" cy="8" r="8"></circle>
-                    </svg>
-                    <span className="px-3">Start Lesson</span>
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        className="bi bi-circle-fill contact-us-circle"
+                        viewBox="0 0 16 16"
+                      >
+                        <circle cx="8" cy="8" r="8"></circle>
+                      </svg>
+                      <span className="px-3">Start Lesson</span>
+                    </button>
                   </div>
                 </Col>
                 <Col md={5}>
@@ -552,15 +559,12 @@ const LessonDetail = () => {
                     className="img-fluid character"
                     alt="Start a lesson"
                   />
-                 
                 </Col>
               </Row>
             </Card.Body>
-          </Card>
-        ) : currentSlide === lesson.slides.length ? (
-          <Card className="mt-4">
-            <Card.Header as="h2">Congratulations!</Card.Header>
+          ) : currentSlide === lesson.slides.length ? (
             <Card.Body>
+              <h2 className="mb-3">Congratulations</h2>
               <Card.Text>
                 You have completed this lesson. Now go and practice with some
                 drills!
@@ -580,15 +584,17 @@ const LessonDetail = () => {
                 Go to Drills
               </button>
             </Card.Body>
-          </Card>
-        ) : (
-          <Card className="mt-4">
-            <Card.Header as="h2">
-              Lesson {lessonId} - {lesson.title}
-            </Card.Header>
+          ) : (
             <Card.Body>
               <Row>
-                <Col md={8} >
+                <Col>
+                  <h2 className="mb-3">
+                    Lesson {lessonId} - {lesson.title}
+                  </h2>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={8}>
                   {SlideComponent ? (
                     <SlideComponent {...slideComponentProps} />
                   ) : (
@@ -628,9 +634,8 @@ const LessonDetail = () => {
                 </Col>
               </Row>
             </Card.Body>
-            <Card.Footer></Card.Footer>
-          </Card>
-        )}
+          )}
+        </Card>
       </section>
     </Container>
   );

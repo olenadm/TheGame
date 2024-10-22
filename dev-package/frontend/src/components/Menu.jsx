@@ -14,8 +14,8 @@ const Menu = (isLoggedIn) => {
       collapseOnSelect
       className="color-change-nav py-1"
     >
-      <Container fluid>
-        <Navbar.Brand className="ps-lg-5" href="/">
+      <Container>
+        <Navbar.Brand href="/">
           <img src="/images/logo2.png" alt="Backgammon Academy" />
           Backgammon Academy
         </Navbar.Brand>

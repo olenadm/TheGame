@@ -49,7 +49,7 @@
 }
 /* Backgammon board itself should not exceed available screen size */
 #bglogContainer {
-  width: 96%; /* Ensures the board doesn't exceed the container width */
+  width: 70%; /* Ensures the board doesn't exceed the container width */
   /*height: 60vh; !* Set max height relative to viewport *!*/
   /*width: auto;*/
   /*height: auto;*/

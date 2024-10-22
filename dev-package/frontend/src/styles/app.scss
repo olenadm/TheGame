@@ -28,12 +28,11 @@ $success: #647e41;
 $primary: #070086;
 $secondary: #673ab7;
 
-#root,
-html {
-  height: 100%;
-}
+html,
+body,
 #root {
   position: relative;
+  height: 100%;
 }
 /* General page background */
 body {
@@ -81,10 +80,6 @@ h1 span {
 
 .nav-link:hover {
   color: $text-color-light !important;
-}
-
-/* Ensure content is below the navbar */
-.app-content {
 }
 
 /* Navbar and sections */
@@ -355,8 +350,18 @@ label {
   border-bottom: $border1;
 }
 
+.app-content {
+  position: relative;
+  min-height: 100vh;
+  margin-bottom: -75px;
+}
+
 .footer {
   border-top: $border1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .footer a:link,
@@ -504,7 +509,7 @@ label {
   .hero img.character {
     width: 102px;
     bottom: 0;
-    left: 9%;    
+    left: 9%;
   }
   .login img.character {
     width: 85px;
@@ -529,7 +534,7 @@ label {
   .hero img.character {
     width: 202px;
     bottom: 0;
-    left: 9%;    
+    left: 9%;
   }
   .login img.character {
     width: 210px;
@@ -553,7 +558,7 @@ label {
     height: 70px;
   }
   .custom-primary-button {
-    width: 45%;
+    width: 50%;
   }
   svg.contact-us-circle {
     width: 50px;

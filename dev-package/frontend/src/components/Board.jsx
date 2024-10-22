@@ -90,7 +90,7 @@ const Board = ({ xgid, theme }) => {
 
     return (<>
         <div className="board-wrapper" ref={boardRef}></div>
-        <div id="idInput"><input type="search" id="main-xgid" name="main-xgid" title="XGID" value={feedbackXGID}/></div>
+        {/* <div id="idInput"><input type="search" id="main-xgid" name="main-xgid" title="XGID" value={feedbackXGID}/></div>*/}
     </>);
 };
 

@@ -16,7 +16,6 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import { ProfileProvider } from "./contexts/ProfileContext";
 
-
 import DrillDetail from "./components/DrillDetail";
 import { BglogProvider } from "./contexts/BgLogContext";
 import Editor from "./components/Editor";
@@ -38,56 +37,50 @@ function App() {
     <BglogProvider>
       <ProfileProvider>
         <Router>
-        
-            <Menu isLoggedIn={isLoggedIn} />{" "}
-            {/* Pass isLoggedIn to show/hide login/profile buttons */}
-            <div className="app-content">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/editor" element={<Editor />} />
-                <Route
-                  path="/login"
-                  element={<Login onLoginSuccess={handleLoginSuccess} />} // Pass login handler to Login component
-                />
-                <Route
-                  path="/lessons"
-                  element={
-                    isLoggedIn ? <LessonList /> : <Navigate to="/login" />
-                  }
-                />
-                <Route
-                  path="/drills"
-                  element={
-                    isLoggedIn ? <DrillList /> : <Navigate to="/login" />
-                  }
-                />
-                <Route
-                  path="/drills/:glossaryId"
-                  element={
-                    isLoggedIn ? <DrillDetail /> : <Navigate to="/login" />
-                  }
-                />
-                <Route
-                  path="/glossary"
-                  element={
-                    isLoggedIn ? <GlossaryList /> : <Navigate to="/login" />
-                  }
-                />
-                <Route
-                  path="/lessons/:lessonId"
-                  element={
-                    isLoggedIn ? <LessonDetail /> : <Navigate to="/login" />
-                  }
-                />
-                <Route
-                  path="/profile"
-                  element={isLoggedIn ? <Profile /> : <Navigate to="/login" />}
-                />
-                <Route path="*" element={<Navigate to="/" />} />
-              </Routes>
-            </div>
+          <Menu isLoggedIn={isLoggedIn} />{" "}
+          {/* Pass isLoggedIn to show/hide login/profile buttons */}
+          <div className="app-content position-relative">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/editor" element={<Editor />} />
+              <Route
+                path="/login"
+                element={<Login onLoginSuccess={handleLoginSuccess} />} // Pass login handler to Login component
+              />
+              <Route
+                path="/lessons"
+                element={isLoggedIn ? <LessonList /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/drills"
+                element={isLoggedIn ? <DrillList /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/drills/:glossaryId"
+                element={
+                  isLoggedIn ? <DrillDetail /> : <Navigate to="/login" />
+                }
+              />
+              <Route
+                path="/glossary"
+                element={
+                  isLoggedIn ? <GlossaryList /> : <Navigate to="/login" />
+                }
+              />
+              <Route
+                path="/lessons/:lessonId"
+                element={
+                  isLoggedIn ? <LessonDetail /> : <Navigate to="/login" />
+                }
+              />
+              <Route
+                path="/profile"
+                element={isLoggedIn ? <Profile /> : <Navigate to="/login" />}
+              />
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
             <Footer />
-          
+          </div>
         </Router>
       </ProfileProvider>
     </BglogProvider>

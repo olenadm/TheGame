@@ -17,8 +17,8 @@ const Home = () => {
     <>
       <section className="section-dark hero borderBottom">
         <div className="section" style={myStyle}>
-          <Container fluid>
-            <Row className="align-items-center px-xl-5 px-4">
+          <Container >
+            <Row className="align-items-center">
               <Col md={6} className="px-xl-4">
                 <h1 className="heading mb-lg-5 mb-3 mt-5 mt-lg-3">
                   Learn to Master{" "}
@@ -26,7 +26,7 @@ const Home = () => {
                 </h1>
 
                 <Row className="mb-3 mb-lg-4 text-left stroke-text">
-                  <Col lg={5}>
+                  <Col lg={5} className="px-xl-4">
                     <Row className="align-items-center">
                       <Col xs={7} md={5} lg={7}>
                         <h2 className="stroke-color-change">5000</h2>
@@ -100,8 +100,8 @@ const Home = () => {
       </section>
 
       <section className="section section-light borderBottom">
-        <Container fluid>
-          <Row className="align-items-center px-xl-5 px-4">
+        <Container>
+          <Row className="align-items-center">
             <Col md={5} className="px-xl-4">
               <img src="/images/game.jpg" alt="Backgammon social" />
             </Col>
@@ -132,9 +132,9 @@ const Home = () => {
       </section>
 
       <section className="section section-dark borderBottom">
-        <Container fluid>
-          <Row className="align-items-center px-xl-5 px-4">
-            <Col md={7} className="px-xl-4">
+        <Container>
+          <Row className="align-items-center">
+            <Col md={7} className="px-lg-4">
               <h2 className="heading mb-lg-5 mb-3  mt-lg-3 text-start">
                 Beautiful <span className="text-color-change">interactive boards</span> to learn from
               </h2>
@@ -143,7 +143,7 @@ const Home = () => {
                 better than another
               </p>
             </Col>
-            <Col md={5} className="px-xl-4">
+            <Col md={5} className="px-lg-4">
               <img src="/images/bg-cocktails.jpg" alt="Backgammon board" className="float-md-end mt-3" />
             </Col>
           </Row>
@@ -151,12 +151,12 @@ const Home = () => {
       </section>
 
       <section className="section section-light">
-        <Container fluid>
-          <Row className="align-items-center px-xl-5 px-4">
-            <Col md={5} className="px-xl-4">
+        <Container>
+          <Row className="align-items-center">
+            <Col md={5} className="px-lg-4">
               <img src="/images/bg-academy.png" alt="Backgammon board" className='img-fluid' />
             </Col>
-            <Col md={7} className="px-xl-4">
+            <Col md={7} className="px-lg-4">
               <h2 className="heading text-start mb-lg-5 mb-3 mt-5 mt-lg-3">AI powered decisions</h2>
               <p className="text-content">
                 Our backgammon engine is one of the best out there. As a result
