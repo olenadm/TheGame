@@ -10,8 +10,15 @@ import "../styles/app.scss";
 import "./LessonList.css";
 import { useProfile } from "../contexts/ProfileContext"; // Import the CSS file for the Home component
 import Header from "./Header";
+import CustomModal from "./CustomModal";
 const apiBaseUrl = process.env.REACT_APP_API_BASE_URL || "";
+
 const LessonList = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const { profile, refreshProfile } = useProfile(); // Use the context
 
   const [lessons, setLessons] = useState({
@@ -71,11 +78,16 @@ const LessonList = () => {
           >
             <Card.Body>
               <Card.Title className="lesson-title">
-                <span className='color-change-nav circle'>{lesson.id}</span> {lesson.title}
+                <span className="color-change-nav circle">{lesson.id}</span>{" "}
+                {lesson.title}
                 {!isPaid && (
                   <FontAwesomeIcon
                     icon={faLock}
-                    style={{ marginLeft: "10px", color: "red", fontSize:'1rem' }}
+                    style={{
+                      marginLeft: "10px",
+                      color: "red",
+                      fontSize: "1rem",
+                    }}
                   />
                 )}
               </Card.Title>
@@ -118,12 +130,42 @@ const LessonList = () => {
           <Col>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
-                <Accordion.Header> <FontAwesomeIcon
-                      icon={faCheck}
-                      style={{ marginRight: "15px", color: 'green' }}
-                    /> Basic Concepts</Accordion.Header>
+                <Accordion.Header>
+                  {" "}
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    style={{ marginRight: "15px", color: "green" }}
+                  />{" "}
+                  Basic Concepts
+                </Accordion.Header>
                 <Accordion.Body>
-                  <Row>{renderLessons(lessons.basicconcepts)}</Row>
+                  <Row>
+                    {renderLessons(lessons.basicconcepts)}
+                    <Col md={4} className="mb-3">
+                      <Card
+                        className="lesson-card mb-3 h-100 disabled"
+                        onClick={handleShow}
+                      >
+                        <Card.Body>
+                          <Card.Title className="lesson-title">
+                            <span className="circle">22</span>
+                            {/*  circle to have only one classname in disabled state*/}
+                            Disabled lesson
+                          </Card.Title>
+
+                          <Card.Text>Lesson description static text</Card.Text>
+
+                          <div className="progress-container">
+                            <ProgressBar
+                              striped
+                              now={5}
+                              className="progress-bar-custom"
+                            />
+                          </div>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  </Row>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
@@ -158,6 +200,7 @@ const LessonList = () => {
           </Col>
         </Row>
       </section>
+      <CustomModal handleClose={handleClose} show={show} txt='Please complete lesson 21' title='Please complete previous lesson'/>
     </Container>
   );
 };

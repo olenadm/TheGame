@@ -8,6 +8,8 @@
   --headings-font: "Agdasima", sans-serif;
   --dark: #050069;
   --border1: 1px solid rgba(255, 255, 255, 0.15);
+  --modal: rgba(25, 12, 109, 1);
+  --borderColor: rgba(255, 255, 255, 0.15);
 }
 
 /* Define color variables for easy management */
@@ -23,6 +25,9 @@ $bg-gradient-end: #02004b;
 $border1: 1px solid rgba(255, 255, 255, 0.15);
 
 $animation-1: #e62e3d;
+
+$disabledCard: #1a237e;
+$disabledCard-color: #9aa4da;
 
 $success: #647e41;
 $primary: #070086;
@@ -141,6 +146,17 @@ h1 span {
 .border-bottom {
   border-bottom: $border1 !important;
 }
+
+.modal {
+  --bs-modal-bg: var(--modal);
+  --bs-modal-border-color: var(--borderColor);
+  --bs-modal-border-radius: 8px;
+  --bs-modal-header-border-color: var(--borderColor);
+  --bs-modal-footer-border-color: var(--borderColor);
+}
+.modal-header {
+  background-color: $primary;
+}
 .btn {
   border-radius: 25px;
 }
@@ -185,6 +201,26 @@ h1 span {
   border-radius: 25px;
   color: #fff;
 }
+.disabled.card {
+  background: $disabledCard;
+  color: $disabledCard-color;
+}
+.disabled.card .card-title,
+.disabled.card .card-text {
+  color: $disabledCard-color;
+}
+.disabled.card .circle {
+  background-color: $bg-gradient-mid;
+}
+.disabled.card .progress-bar-custom {
+  background: linear-gradient(
+    to right,
+    $bg-gradient-start 0%,
+    $bg-gradient-mid 51%,
+    $bg-gradient-end 100%
+  );
+}
+
 .login .card {
   padding: 40px 35px 35px 35px;
 }
