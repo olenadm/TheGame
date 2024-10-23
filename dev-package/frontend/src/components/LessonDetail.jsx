@@ -482,7 +482,7 @@ const LessonDetail = () => {
         <Card className="mt-4">
           <Card.Header>
             <Row className="align-items-center justify-content-between">
-              <Col xs={5} md={3} className="text-start">
+              <Col xs={4} md={3} className="text-start">
                 <button
                   onClick={() => navigate("/lessons")}
                   className="btn btn-primary"
@@ -491,12 +491,12 @@ const LessonDetail = () => {
                     icon={faArrowLeft}
                     style={{ marginRight: "7px", fontSize: "1rem" }}
                   />{" "}
-                  Back to Lessons
+                  <span className="d-none d-md-inline-block">Back to Lessons</span>
                 </button>
               </Col>
 
               {/* XGID and current slide info aligned in the center */}
-              <Col xs={2} md={6} className="text-center">
+              <Col xs={4} md={6} className="text-center">
                 {/*<pre>{slide?.xgid}</pre>*/}
                 <span>
                   {currentSlide + 1} / {lesson?.slides?.length}
@@ -504,13 +504,13 @@ const LessonDetail = () => {
               </Col>
 
               {/* Next Slide button aligned to the right */}
-              <Col xs={5} md={3} className="text-end">
+              <Col xs={4} md={3} className="text-end">
                 <button
                   onClick={nextSlide}
                   disabled={slide.ShowComponent && !nextButtonEnabled}
                   className="btn btn-primary"
                 >
-                  Next Slide{" "}
+                  <span className="d-none d-md-inline-block">Next Slide</span>
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     style={{ marginLeft: "7px", fontSize: "1rem" }}
@@ -534,6 +534,15 @@ const LessonDetail = () => {
                 </Col>
               </Row>
               <Row>
+              <Col md={5} className='text-center position-relative'>
+                  <img
+                    src="/images/character-checker.png"
+                    className="img-fluid character moving mx-auto"
+                    alt="Start a lesson"
+                    style={{left: 0,right:0}}
+                  
+                  />
+                </Col>
                 <Col md={7}>
                   <div className="description p-4">
                     <Card.Text>{lesson.description}</Card.Text>
@@ -553,13 +562,7 @@ const LessonDetail = () => {
                     </button>
                   </div>
                 </Col>
-                <Col md={5}>
-                  <img
-                    src="/images/character-checker.png"
-                    className="img-fluid character"
-                    alt="Start a lesson"
-                  />
-                </Col>
+           
               </Row>
             </Card.Body>
           ) : currentSlide === lesson.slides.length ? (

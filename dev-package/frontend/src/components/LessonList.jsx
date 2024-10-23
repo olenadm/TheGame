@@ -123,9 +123,10 @@ const LessonList = () => {
         txt="Some lessons will require you to have completed other lessons. We
             realise that everyone's level is different but it can only do you
             good to practice those skills!"
+        img="character-checker.png"
       />
 
-      <section class="section-dark section pt-3 lessons">
+      <section class="section-dark section pt-3 lessons drills">
         <Row>
           <Col>
             <Accordion defaultActiveKey="0">
@@ -200,7 +201,12 @@ const LessonList = () => {
           </Col>
         </Row>
       </section>
-      <CustomModal handleClose={handleClose} show={show} txt='Please complete lesson 21' title='Please complete previous lesson'/>
+      <CustomModal
+        handleClose={handleClose}
+        show={show}
+        txt="Please complete lesson 21"
+        title="Please complete previous lesson"
+      />
     </Container>
   );
 };

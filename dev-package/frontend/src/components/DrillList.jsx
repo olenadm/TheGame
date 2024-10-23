@@ -72,21 +72,15 @@ const DrillList = () => {
         txt=" Each drill is categorised based on things you will learn during
               the lesson plans, but its best you learn the way that works for
               you"
+        img="character-evil.png"
       />
       <section class="section-dark section pt-3 lessons drills">
         <Row>
-          <Col smxs={9} className=" mb-3 text-start">
+          <Col smxs={12} className=" mb-3 text-start">
             <h5 className="d-inline-block ms-4">Drill Count: </h5>{" "}
             <span className="color-change-nav me-0 circle ms-2">
               {glossary?.length}
             </span>
-          </Col>
-          <Col xs={3} className="position-relative text-center">
-            <img
-              src="/images/character-evil.png"
-              alt="Backgammon game"
-              className="character"
-            />
           </Col>
         </Row>
         <Row>{renderDrills()}</Row>

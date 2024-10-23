@@ -136,6 +136,7 @@ const GlossaryList = () => {
       <Header
         title=" Glossary"
         subTitle="Learn all the vocab to do with the game"
+        img="character-suit.png"
       />
 
       <section className="section-dark section pt-0 lesson">
@@ -145,7 +146,7 @@ const GlossaryList = () => {
               <Card.Body>
                 <Card.Title className="drill-title">
                   <Row>
-                    <Col sm={9}>
+                    <Col md={10}>
                       {" "}
                       {/* Search box */}
                       <Form.Control
@@ -154,13 +155,6 @@ const GlossaryList = () => {
                         value={searchTerm}
                         onChange={handleSearch}
                         className="mb-3"
-                      />
-                    </Col>
-                    <Col sm={3} className="position-relative text-center">
-                      <img
-                        src="/images/character-suit.png"
-                        alt="Backgammon game"
-                        className="character"
                       />
                     </Col>
                   </Row>

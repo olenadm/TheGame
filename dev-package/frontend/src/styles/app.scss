@@ -312,7 +312,7 @@ label {
 
 .login img.character,
 .drill-card img.character,
-.drills img.character {
+img.character.moving {
   z-index: 99;
   animation: move5 3s infinite linear;
 }
@@ -546,8 +546,8 @@ label {
     right: 20px;
   }
 
-  .drills img.character {
-    width: 80px;
+  img.character.moving {
+    width: 120px;
     margin: 15px auto 0;
   }
   .btn-primary {
@@ -581,7 +581,7 @@ label {
     right: 15px;
     position: absolute;
   }
-  .drills img.character {
+  img.character.moving {
     width: 130px;
     top: -70px;
     right: 15px;
@@ -623,9 +623,9 @@ label {
     right: 35px;
     margin: 0;
   }
-  .drills img.character {
-    width: 190px;
-    top: -100px;
+  img.character.moving {
+    width: 210px;
+    top: -10px;
     right: 25px;
     margin: 0;
   }
