@@ -66,7 +66,6 @@ const DrillList = () => {
 
   return (
     <Container className="mt-5">
-      
       <Header
         title="Drills are a great way to hone your skills once you have completed
             your lessons"
@@ -74,10 +73,20 @@ const DrillList = () => {
               the lesson plans, but its best you learn the way that works for
               you"
       />
-      <section class="section-dark section pt-3 lessons">
+      <section class="section-dark section pt-3 lessons drills">
         <Row>
-          <Col className="drill-card mb-3 text-start">          
-            <h5 className='d-inline-block ms-4'>Drill Count:  </h5> <span className='color-change-nav me-0 circle ms-2'>{glossary?.length}</span>
+          <Col smxs={9} className=" mb-3 text-start">
+            <h5 className="d-inline-block ms-4">Drill Count: </h5>{" "}
+            <span className="color-change-nav me-0 circle ms-2">
+              {glossary?.length}
+            </span>
+          </Col>
+          <Col xs={3} className="position-relative text-center">
+            <img
+              src="/images/character-evil.png"
+              alt="Backgammon game"
+              className="character"
+            />
           </Col>
         </Row>
         <Row>{renderDrills()}</Row>

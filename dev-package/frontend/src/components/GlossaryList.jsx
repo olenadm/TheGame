@@ -144,14 +144,26 @@ const GlossaryList = () => {
             <Card className="drill-card m-3">
               <Card.Body>
                 <Card.Title className="drill-title">
-                  {/* Search box */}
-                  <Form.Control
-                    type="text"
-                    placeholder="Search glossary terms..."
-                    value={searchTerm}
-                    onChange={handleSearch}
-                    className="mb-3"
-                  />
+                  <Row>
+                    <Col sm={9}>
+                      {" "}
+                      {/* Search box */}
+                      <Form.Control
+                        type="text"
+                        placeholder="Search glossary terms..."
+                        value={searchTerm}
+                        onChange={handleSearch}
+                        className="mb-3"
+                      />
+                    </Col>
+                    <Col sm={3} className="position-relative text-center">
+                      <img
+                        src="/images/character-suit.png"
+                        alt="Backgammon game"
+                        className="character"
+                      />
+                    </Col>
+                  </Row>
                 </Card.Title>
 
                 {/* Category badges at the top */}

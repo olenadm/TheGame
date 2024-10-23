@@ -310,7 +310,7 @@ label {
   }
 }
 
-.login img.character {
+.login img.character, .drill-card img.character, .drills img.character {
   z-index: 99;
   animation: move5 3s infinite linear;
 }
@@ -553,6 +553,12 @@ label {
     top: 0;
     right: 20px;
   }
+
+  
+  .drills img.character{
+    width:80px;
+    margin: 15px auto 0;
+  }
   .btn-primary {
     font-size: 12px;
   }
@@ -577,6 +583,18 @@ label {
     top: auto;
     bottom: 30px;
     right: 25%;
+  }
+  .drill-card img.character{
+    width:150px;
+    top:-70px;
+    right: 15px;
+    position:absolute;
+  }
+  .drills img.character{
+    width:130px;
+    top:-70px;
+    right: 15px;
+    position:absolute;
   }
 }
 
@@ -607,5 +625,17 @@ label {
     width: 245px;
     bottom: 30px;
     right: 35%;
+  }
+  .drill-card img.character{
+    width:210px;
+    top:-110px;
+    right:35px;
+    margin:0;
+  }
+  .drills img.character{
+    width:190px;
+    top:-100px;
+    right:25px;
+    margin:0;
   }
 }

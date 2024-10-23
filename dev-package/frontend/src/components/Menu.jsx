@@ -32,7 +32,7 @@ const Menu = (isLoggedIn) => {
               <Nav.Link eventKey="3">Glossary</Nav.Link>
             </LinkContainer>
           </Nav>
-          <Nav className="pe-lg-5">
+          <Nav>
             {isLoggedIn ? (
               <LinkContainer to="/profile">
                 <Nav.Link eventKey="4"> <FontAwesomeIcon icon={faUser} style={{ marginRight: '7px', fontSize: '1rem' }}  /> Profile</Nav.Link>
