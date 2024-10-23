@@ -64,6 +64,7 @@
   padding: 15px;
   background: #02004c;
   border-radius: 10px;
+  line-height:2.1em;
 }
 .hint {
   white-space: pre-wrap;

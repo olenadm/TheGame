@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 const Footer = (isLoggedIn) => {
   return (
-    <section className="footer">
+    <section className="footer mt-auto">
       <Container className="py-2">
         <Row className="align-items-center">
           <Col md={6} className="text-center text-md-start">

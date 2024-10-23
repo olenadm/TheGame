@@ -24,10 +24,10 @@ export const porpoise = {
     "cubeStart": true,
     "cubeStrokeColor": "#000000",
     "cubeTextColor": "#93648D",
-    "deepTrays": true,
+    "deepTrays": false,
     "diceSize": 1,
     "direction": true,
-    "highlightColor": "#fff",
+    "highlightColor": "#000",
     "moveDelay": 750,
     "oppCheckerColor": "#e62e3d",
     "oppDiceFillColor": "#d1615d",
@@ -74,6 +74,6 @@ export const porpoise = {
     "topPlayer": "Alec Trevelyan",
     "trayBorders": true,
     "trayCheckerStyle": "-1",
-    "trayColor": "#d3843d",
+    "trayColor": "#eb9547",
     "numberOfCubes": 1
 }

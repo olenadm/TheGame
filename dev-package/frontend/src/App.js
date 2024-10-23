@@ -39,48 +39,40 @@ function App() {
         <Router>
           <Menu isLoggedIn={isLoggedIn} />{" "}
           {/* Pass isLoggedIn to show/hide login/profile buttons */}
-          <div className="app-content position-relative">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/editor" element={<Editor />} />
-              <Route
-                path="/login"
-                element={<Login onLoginSuccess={handleLoginSuccess} />} // Pass login handler to Login component
-              />
-              <Route
-                path="/lessons"
-                element={isLoggedIn ? <LessonList /> : <Navigate to="/login" />}
-              />
-              <Route
-                path="/drills"
-                element={isLoggedIn ? <DrillList /> : <Navigate to="/login" />}
-              />
-              <Route
-                path="/drills/:glossaryId"
-                element={
-                  isLoggedIn ? <DrillDetail /> : <Navigate to="/login" />
-                }
-              />
-              <Route
-                path="/glossary"
-                element={
-                  isLoggedIn ? <GlossaryList /> : <Navigate to="/login" />
-                }
-              />
-              <Route
-                path="/lessons/:lessonId"
-                element={
-                  isLoggedIn ? <LessonDetail /> : <Navigate to="/login" />
-                }
-              />
-              <Route
-                path="/profile"
-                element={isLoggedIn ? <Profile /> : <Navigate to="/login" />}
-              />
-              <Route path="*" element={<Navigate to="/" />} />
-            </Routes>
-            <Footer />
-          </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/editor" element={<Editor />} />
+            <Route
+              path="/login"
+              element={<Login onLoginSuccess={handleLoginSuccess} />} // Pass login handler to Login component
+            />
+            <Route
+              path="/lessons"
+              element={isLoggedIn ? <LessonList /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/drills"
+              element={isLoggedIn ? <DrillList /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/drills/:glossaryId"
+              element={isLoggedIn ? <DrillDetail /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/glossary"
+              element={isLoggedIn ? <GlossaryList /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/lessons/:lessonId"
+              element={isLoggedIn ? <LessonDetail /> : <Navigate to="/login" />}
+            />
+            <Route
+              path="/profile"
+              element={isLoggedIn ? <Profile /> : <Navigate to="/login" />}
+            />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+          <Footer />
         </Router>
       </ProfileProvider>
     </BglogProvider>

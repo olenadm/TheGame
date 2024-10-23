@@ -36,15 +36,15 @@ $secondary: #673ab7;
 html,
 body,
 #root {
-  position: relative;
+  min-height: 100% !important;
   height: 100%;
 }
+
 /* General page background */
 body {
   background-color: $secondary-color;
   color: $text-color-light;
   font-family: "Inter", sans-serif;
-  height: 100%;
   padding-top: 80px;
   font-size: 16px;
 }
@@ -310,7 +310,9 @@ label {
   }
 }
 
-.login img.character, .drill-card img.character, .drills img.character {
+.login img.character,
+.drill-card img.character,
+.drills img.character {
   z-index: 99;
   animation: move5 3s infinite linear;
 }
@@ -386,18 +388,8 @@ label {
   border-bottom: $border1;
 }
 
-.app-content {
-  position: relative;
-  min-height: 100vh;
-  margin-bottom: -75px;
-}
-
 .footer {
   border-top: $border1;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 
 .footer a:link,
@@ -554,9 +546,8 @@ label {
     right: 20px;
   }
 
-  
-  .drills img.character{
-    width:80px;
+  .drills img.character {
+    width: 80px;
     margin: 15px auto 0;
   }
   .btn-primary {
@@ -584,17 +575,17 @@ label {
     bottom: 30px;
     right: 25%;
   }
-  .drill-card img.character{
-    width:150px;
-    top:-70px;
+  .drill-card img.character {
+    width: 150px;
+    top: -70px;
     right: 15px;
-    position:absolute;
+    position: absolute;
   }
-  .drills img.character{
-    width:130px;
-    top:-70px;
+  .drills img.character {
+    width: 130px;
+    top: -70px;
     right: 15px;
-    position:absolute;
+    position: absolute;
   }
 }
 
@@ -626,16 +617,16 @@ label {
     bottom: 30px;
     right: 35%;
   }
-  .drill-card img.character{
-    width:210px;
-    top:-110px;
-    right:35px;
-    margin:0;
+  .drill-card img.character {
+    width: 210px;
+    top: -110px;
+    right: 35px;
+    margin: 0;
   }
-  .drills img.character{
-    width:190px;
-    top:-100px;
-    right:25px;
-    margin:0;
+  .drills img.character {
+    width: 190px;
+    top: -100px;
+    right: 25px;
+    margin: 0;
   }
 }
