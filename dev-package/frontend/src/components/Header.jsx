@@ -7,7 +7,7 @@ const Header = (props) => {
       <Row>
         <Col xs={2} md={1} className="text-center title">
           {" "}
-          <img src="images/dice.png" alt="Dice" class="mx-auto" />
+          <img src="images/dice.png" alt="Dice" className="mx-auto" />
         </Col>
         <Col xs={10} md={8}>
           <h1 className="heading mb-3 lh-1">{title}</h1>

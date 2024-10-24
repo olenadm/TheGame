@@ -126,7 +126,7 @@ const LessonList = () => {
         img="character-checker.png"
       />
 
-      <section class="section-dark section pt-3 lessons drills">
+      <section className="section-dark section pt-3 lessons drills">
         <Row>
           <Col>
             <Accordion defaultActiveKey="0">
