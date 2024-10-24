@@ -157,7 +157,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="section section-light">
+      <section className="section section-light border-bottom">
         <Container>
           <Row className="align-items-center">
             <Col md={5} className="px-lg-4">
@@ -195,7 +195,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="section section-dark borderBottom">
+      <section className="section section-dark">
         <Container>
           <Row className="align-items-center">
             <Col md={12} className="px-lg-4 text-center">
