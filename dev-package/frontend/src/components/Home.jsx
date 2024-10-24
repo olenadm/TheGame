@@ -17,7 +17,7 @@ const Home = () => {
     <>
       <section className="section-dark hero borderBottom">
         <div className="section" style={myStyle}>
-          <Container >
+          <Container>
             <Row className="align-items-center">
               <Col md={6} className="px-xl-4">
                 <h1 className="heading mb-lg-5 mb-3 mt-5 mt-lg-3">
@@ -107,7 +107,8 @@ const Home = () => {
             </Col>
             <Col md={7} className="px-xl-4">
               <h2 className="heading text-start mb-lg-5 mb-3 mt-5 mt-lg-3">
-                Why <span className="text-color-change">Backgammon Academy</span>?
+                Why{" "}
+                <span className="text-color-change">Backgammon Academy</span>?
               </h2>
               <p className="text-content">
                 Our lesson plans are carefully curated and structured so that
@@ -136,7 +137,9 @@ const Home = () => {
           <Row className="align-items-center">
             <Col md={7} className="px-lg-4">
               <h2 className="heading mb-lg-5 mb-3  mt-lg-3 text-start">
-                Beautiful <span className="text-color-change">interactive boards</span> to learn from
+                Beautiful{" "}
+                <span className="text-color-change">interactive boards</span> to
+                learn from
               </h2>
               <p className="text-content">
                 The boards we use allow you to really understand why a move is
@@ -144,7 +147,11 @@ const Home = () => {
               </p>
             </Col>
             <Col md={5} className="px-lg-4">
-              <img src="/images/bg-cocktails.jpg" alt="Backgammon board" className="float-md-end mt-3" />
+              <img
+                src="/images/bg-cocktails.jpg"
+                alt="Backgammon board"
+                className="float-md-end mt-3"
+              />
             </Col>
           </Row>
         </Container>
@@ -154,10 +161,16 @@ const Home = () => {
         <Container>
           <Row className="align-items-center">
             <Col md={5} className="px-lg-4">
-              <img src="/images/bg-academy.png" alt="Backgammon board" className='img-fluid' />
+              <img
+                src="/images/bg-academy.png"
+                alt="Backgammon board"
+                className="img-fluid"
+              />
             </Col>
             <Col md={7} className="px-lg-4">
-              <h2 className="heading text-start mb-lg-5 mb-3 mt-5 mt-lg-3">AI powered decisions</h2>
+              <h2 className="heading text-start mb-lg-5 mb-3 mt-5 mt-lg-3">
+                AI powered decisions
+              </h2>
               <p className="text-content">
                 Our backgammon engine is one of the best out there. As a result
                 you will get to see how good your moves are compared to the best
@@ -181,7 +194,36 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-    
+
+      <section className="section section-dark borderBottom">
+        <Container>
+          <Row className="align-items-center">
+            <Col md={12} className="px-lg-4 text-center">
+              <img
+                src="/images/all.png"
+                alt="Backgammon board"
+                className="mx-auto mt-3 img-fluid"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col md={{ span: 6, offset: 3 }} className="text-center">
+              <button className="mt-5  py-2 custom-primary-button color-change-nav">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  className="bi bi-circle-fill contact-us-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <circle cx="8" cy="8" r="8"></circle>
+                </svg>
+                <span className="px-3">Contact Us</span>
+              </button>{" "}
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };
